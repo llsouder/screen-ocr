@@ -15,7 +15,10 @@ https://stackoverflow.com/questions/55349307/how-to-tune-tesseract-for-identifyi
 Data generation:
 pip install trdg
 
+## Grouping Text
 
+Paper on grouping text:
+https://www.primaresearch.org/www/assets/papers/ICDAR2013_Antonacopoulos_HNLA2013.pdf
 
 
 ## Trouble
