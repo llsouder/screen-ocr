@@ -17,8 +17,9 @@ pip install trdg
 
 ## Grouping Text
 
-Paper on grouping text:
-https://www.primaresearch.org/www/assets/papers/ICDAR2013_Antonacopoulos_HNLA2013.pdf
+[ICDAR2013 HNLA2013](https://www.primaresearch.org/www/assets/papers/ICDAR2013_Antonacopoulos_HNLA2013.pdf) Describes several methods.  Need to find papers on invidual methods.
+ 
+ This looks better: https://datascience.stackexchange.com/questions/47302/how-can-i-detect-blocks-of-text-from-scanned-document-images
 
 
 ## Trouble
