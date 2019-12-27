@@ -21,6 +21,7 @@ pip install trdg
  
  This looks better: https://datascience.stackexchange.com/questions/47302/how-can-i-detect-blocks-of-text-from-scanned-document-images
 
+WIP https://github.com/mvoelk/ssd_detectors
 
 ## Trouble
 
