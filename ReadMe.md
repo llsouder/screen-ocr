@@ -15,13 +15,15 @@ https://stackoverflow.com/questions/55349307/how-to-tune-tesseract-for-identifyi
 Data generation:
 pip install trdg
 
-## Grouping Text
+## Grouping Text Text Localization
 
 [ICDAR2013 HNLA2013](https://www.primaresearch.org/www/assets/papers/ICDAR2013_Antonacopoulos_HNLA2013.pdf) Describes several methods.  Need to find papers on invidual methods.
  
  This looks better: https://datascience.stackexchange.com/questions/47302/how-can-i-detect-blocks-of-text-from-scanned-document-images
 
 WIP https://github.com/mvoelk/ssd_detectors
+
+Object detection 2 stage R-CNN vs 1 stage    https://arxiv.org/pdf/1708.02002.pdf   (1)
 
 ## Trouble
 
