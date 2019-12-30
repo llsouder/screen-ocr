@@ -1,4 +1,4 @@
-# Runway Assignment
+# Screen-OCR
 
 ## Setup 
 
@@ -24,6 +24,10 @@ pip install trdg
 WIP https://github.com/mvoelk/ssd_detectors
 
 Object detection 2 stage R-CNN vs 1 stage    https://arxiv.org/pdf/1708.02002.pdf   (1)
+
+
+Training YOLOv3  https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/ .
+This page contains formats for the training data.
 
 ## Trouble
 
