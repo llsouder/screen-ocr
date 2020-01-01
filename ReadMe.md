@@ -29,6 +29,12 @@ Object detection 2 stage R-CNN vs 1 stage    https://arxiv.org/pdf/1708.02002.pd
 Training YOLOv3  https://www.learnopencv.com/training-yolov3-deep-learning-based-custom-object-detector/ .
 This page contains formats for the training data.
 
+## EAST Model
+
+Lots of tutorials, but most of them forget to mention where to get the model data!
+https://drive.google.com/file/d/1hfIzGuQn-xApDYiucMDZvOCosyAVwvku/view?usp=sharing
+https://ucb0f79433f0764026678d7d6251.dl.dropboxusercontent.com/cd/0/get/AvXHLD-MXoUwui1Q-ds5tGhdAZbmPgG6VARXarE4Ew3W6IuZldTOFCgfTUwuTms2uzwnXm5WOdeEUTzSmSvUo8lrkvEXRL098bUjQafYWI0Weg/file?dl=1#
+
 ## Trouble
 
 ### pip install pipenv
