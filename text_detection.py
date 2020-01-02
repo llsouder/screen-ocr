@@ -141,6 +141,8 @@ def main():
 
         # Display the frame
         cv.imshow(kWinName,frame)
-
+    cap.release()
+    cv.destroyAllWindows();
+   
 if __name__ == "__main__":
     main()
