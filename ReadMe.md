@@ -35,6 +35,11 @@ Lots of tutorials, but most of them forget to mention where to get the model dat
 
 https://raw.githubusercontent.com/oyyd/frozen_east_text_detection.pb/master/frozen_east_text_detection.pb
 
+## hsv
+
+https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/
+
+
 ## Trouble
 
 ### pip install pipenv
