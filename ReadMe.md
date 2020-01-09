@@ -39,6 +39,9 @@ https://raw.githubusercontent.com/oyyd/frozen_east_text_detection.pb/master/froz
 
 https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/
 
+this might help the text localization problem:
+https://stackoverflow.com/questions/24385714/detect-text-region-in-image-using-opencv
+
 
 ## Trouble
 
