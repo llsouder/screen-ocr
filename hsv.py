@@ -4,7 +4,7 @@ import numpy as np
 def callback(x):
     pass
 
-cap = cv2.VideoCapture("jpvd.mkv")
+cap = cv2.VideoCapture("atc.mp4")
 print("testing...")
 
 cv2.namedWindow('Colorbars')
@@ -18,24 +18,20 @@ vh='Value High'
 vl='Value Low'
 wnd = 'Colorbars'
 #Begin Creating trackbars for each
-cv2.createTrackbar(hl, wnd,44,179,callback)
-cv2.createTrackbar(hh, wnd,70,179,callback)
-cv2.createTrackbar(sl, wnd,95,255,callback)
-cv2.createTrackbar(sh, wnd,172,255,callback)
+cv2.createTrackbar(hl, wnd,49,179,callback)
+cv2.createTrackbar(hh, wnd,75,179,callback)
+cv2.createTrackbar(sl, wnd,37,255,callback)
+cv2.createTrackbar(sh, wnd,255,255,callback)
 cv2.createTrackbar(vl, wnd,158,255,callback)
 cv2.createTrackbar(vh, wnd,255,255,callback)
 
-
-
-_, frame_orig = cap.read()
-
 while(1):
+    _, frame_orig = cap.read()
     frame = frame_orig.copy()
     # Convert BGR to HSV
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
     # define range of blue color in HSV
-
-
     hul=cv2.getTrackbarPos(hl, wnd)
     huh=cv2.getTrackbarPos(hh, wnd)
     sal=cv2.getTrackbarPos(sl, wnd)
@@ -52,13 +48,17 @@ while(1):
     # Threshold the HSV image to get only blue colors
     mask = cv2.inRange (hsv, HSVLOW, HSVHIGH)
 
-    bluecnts = cv2.findContours(mask.copy(),
+    kernel = cv2.getStructuringElement(cv2.MORPH_CROSS, (3,
+                                                         3))  # to manipulate the orientation of dilution , large x means horizonatally dilating  more, large y means vertically dilating more
+    dilated = cv2.dilate(mask, kernel, iterations=4)  # dilate , more the iteration more the dilation
+
+    bluecnts = cv2.findContours(dilated.copy(),
                               cv2.RETR_EXTERNAL,
                               cv2.CHAIN_APPROX_SIMPLE)[-2]
 
     for i in range(0, len(bluecnts)):
         (xg,yg,wg,hg) = cv2.boundingRect(bluecnts[i])
-        if hg > 1:
+        if hg > 50:
             cv2.rectangle(frame,(xg,yg),(xg+wg, yg+hg),(255,0,9),2)
 
     # Bitwise-AND mask and original image
