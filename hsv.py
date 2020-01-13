@@ -59,6 +59,11 @@ while(1):
     for i in range(0, len(bluecnts)):
         (xg,yg,wg,hg) = cv2.boundingRect(bluecnts[i])
         if hg > 50:
+            # crop the image using array slices -- it's a NumPy array
+            # after all!
+            cropped = frame[yg:yg+hg, xg:xg+wg]
+            cv2.imshow("cropped", cropped)
+            cv2.waitKey(0)
             cv2.rectangle(frame,(xg,yg),(xg+wg, yg+hg),(255,0,9),2)
 
     # Bitwise-AND mask and original image
